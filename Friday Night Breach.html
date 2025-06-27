@@ -281,7 +281,7 @@ You&#39;re settling in for a quiet night shift when your SIEM starts lighting up
 
 [[ Phase 1: Initial Detection and Triage]]
 
-</tw-passagedata><tw-passagedata pid="2" name=" Phase 1: Initial Detection and Triage" tags="" position="200,150" size="100,100">``Opening Scene:``
+</tw-passagedata><tw-passagedata pid="2" name=" Phase 1: Initial Detection and Triage" tags="" position="200,150" size="100,100">&lt;b&gt;&lt;u&gt;Opening Scene:&lt;/b&gt;&lt;/u&gt;
 Multiple alerts flood your dashboard simultaneously:
 
 
@@ -291,22 +291,113 @@ Multiple alerts flood your dashboard simultaneously:
 * VPN connection from unusual geographic location
 * Antivirus quarantine alert from HR department
 
-&#39;&#39;Time Pressure:&#39;&#39; New alerts keep coming in every 30 seconds
+&lt;b&gt;&lt;u&gt;Time Pressure:&#39;&#39; New alerts keep coming in every 30 seconds&lt;/b&gt;&lt;/u&gt;
 
 
+&lt;ul type=&quot;circle&quot;&gt;
+&lt;li&gt;[[Option A: Start with the failed logins - clear entry point]]&lt;/li&gt;
+&lt;li&gt;[[Option B: Focus on the data transfer - could be exfiltration]]&lt;/li&gt;
+&lt;li&gt;[[Option C: Investigate the PowerShell activity - active compramise]]&lt;/li&gt;
+&lt;/ul&gt;
 
-(transition-depart: &quot;dissolve&quot;) [[Choice 1: Ignore]]
-(transition-depart: &quot;dissolve&quot;)[[Choice 2: ALL the things]]
-(transition-depart: &quot;dissolve&quot;)[[Choice 3: somewhere in the middle]]
 
+</tw-passagedata><tw-passagedata pid="3" name="Option A: Start with the failed logins - clear entry point" tags="" position="325,25" size="100,100">&lt;b&gt;&lt;u&gt;Option A: Start with the failed logins - clear entry point&lt;/b&gt;&lt;/u&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;Immediate Result: &lt;/b&gt;You identify Compramised Accounts&lt;br /&gt;
+&lt;b&gt; Consequence: &lt;/b&gt; Miss Active data exfiltration happening now &lt;br /&gt;&lt;br /&gt;
+[[Decision Point 1B: Resource Allocation]]</tw-passagedata><tw-passagedata pid="4" name="Option B: Focus on the data transfer - could be exfiltration" tags="" position="325,150" size="100,100">&lt;b&gt;&lt;u&gt;Option B: Focus on the data transfer - could be exfiltration&lt;/b&gt;&lt;/u&gt;&lt;br /&gt;&lt;br /&gt;
 
-</tw-passagedata><tw-passagedata pid="3" name="Choice 1: Ignore" tags="" position="325,25" size="100,100">You have chosen to ignore the alerts for now...
+&lt;b&gt;Immediate Result:&lt;/b&gt; Discover 2GB of data already transferred&lt;br /&gt;
+&lt;b&gt; Consequence: &lt;/b&gt; Attacker notices investigation, changes tactics &lt;br /&gt;&lt;br /&gt;
+[[Decision Point 1B: Resource Allocation]] </tw-passagedata><tw-passagedata pid="5" name="Option C: Investigate the PowerShell activity - active compramise" tags="" position="325,275" size="100,100">&lt;b&gt;&lt;u&gt;Option C: Investigate the PowerShell activity - active compramise&lt;/b&gt;&lt;/u&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt; Immediate Result:&lt;/b&gt; Find attacker currently running commands &lt;br /&gt;
+&lt;b&gt;Consequence: &lt;/b&gt; Can observe tactics, but risk loosing other evidence &lt;br /&gt;&lt;br /&gt;
 
-BAD MOVE. You are COOKED!
+[[Decision Point 1B: Resource Allocation]] </tw-passagedata><tw-passagedata pid="6" name="Decision Point 1B: Resource Allocation" tags="" position="450,150" size="100,100">&lt;b&gt;&lt;u&gt;Decision Point 1B: Resource Allocation&lt;/b&gt;&lt;/u&gt;
+&lt;br /&gt;&lt;br /&gt;
+The alerts keep mulitplying. Alarms are going off and your email box is getting full from all the notices. How do you handle it?
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;ul type=&quot;circle&quot;&gt;
+&lt;li&gt;[[Option A: Call in backup immediately]]&lt;/li&gt;
+&lt;li&gt;[[Option B: Handle initial triage solo, then decide]]&lt;/li&gt;
+&lt;li&gt;[[Option C: Call your supervisor for guidance]]&lt;/li&gt;
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="7" name="Option A: Call in backup immediately" tags="" position="575,25" size="100,100">&lt;b&gt;&lt;u&gt;Option A: Call in backup immediately&lt;/b&gt;&lt;/u&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;Immediate Result:&lt;/b&gt; Help arrives in 45 minutes &lt;br /&gt;
+&lt;b&gt;Consequence:&lt;/b&gt; Better resource coverage, but higher costs&lt;br /&gt;
+&lt;b&gt;New Complication: &lt;/b&gt; Who do you brief and what do you tell them?&lt;br /&gt;&lt;br /&gt;
+[[Phase 2: Investigation and Evidence Gathering]]</tw-passagedata><tw-passagedata pid="8" name="Option B: Handle initial triage solo, then decide" tags="" position="575,150" size="100,100">&lt;b&gt;&lt;u&gt;Option B: handle inital triage solo, then decide&lt;/b&gt;&lt;/u&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;Immediate Result:&lt;/b&gt; 20 minutes of solo investigation&lt;br /&gt;
+&lt;b&gt;Condsequence:&lt;/b&gt; Risk being overwhelmed but maintain control &lt;br /&gt;
+&lt;b&gt; New Complication: &lt;/b&gt; Miss some attack vectors while focused&lt;br /&gt;
+&lt;br /&gt;
+[[Phase 2: Investigation and Evidence Gathering]]</tw-passagedata><tw-passagedata pid="9" name="Option C: Call your supervisor for guidance" tags="" position="575,275" size="100,100">&lt;b&gt;&lt;u&gt;Option C: Call your supervisor for guidance&lt;/b&gt;&lt;/u&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt; Immediate Result: &lt;/b&gt;Wake up cranky supervisor at night&lt;br /&gt;
+&lt;b&gt; Consequence: &lt;/b&gt;Guidance but delayed response time&lt;br /&gt;
+&lt;b&gt; New Complication: &lt;/b&gt;Supervisor questions your competence&lt;br /&gt;&lt;br /&gt;
+[[Phase 2: Investigation and Evidence Gathering]]</tw-passagedata><tw-passagedata pid="10" name="Phase 2: Investigation and Evidence Gathering" tags="" position="700,150" size="100,100">&lt;b&gt;&lt;u&gt;Phase 2: Investigation and Evidence Gathering&lt;/b&gt;&lt;/u&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;Scenario Development:&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;
+Based on the events in Phase 1, you discover:
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;Confirmed: &lt;/b&gt;Spear-phishing email compromised HR manager&#39;s account&lt;br /&gt;
+&lt;b&gt;Active Threat: &lt;b&gt;Attacker has lateral movement through 8 systems&lt;br /&gt;
+&lt;b&gt; Critical Finding: &lt;/b&gt;Finance database access detected 10 minutes ago&lt;br /&gt;
+&lt;b&gt;Time Factor: &lt;/be&gt;Attacker appears to be working toward end-of-week data grab&lt;br /&gt;
+&lt;ul type=&quot;circle&quot;&gt;
+&lt;li&gt;[[Option A: Preserve evidence first - take forensic images]]&lt;/li&gt;
+&lt;li&gt;[[Option B: Contain immediately - isolate affected systems]]&lt;/li&gt;
+&lt;li&gt;[[Option C: Monitor and document while gathering evidence]]&lt;/li&gt;
+&lt;/ul&gt;
+</tw-passagedata><tw-passagedata pid="11" name="Option A: Preserve evidence first - take forensic images" tags="" position="825,25" size="100,100">&lt;b&gt;&lt;u&gt;Option A: Preserve evidence first - take forensic images&lt;/b&gt;&lt;/u&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;Immediate Result: &lt;/b&gt; Solid evidence for later analysis&lt;br /&gt;
+&lt;b&gt;Consequence: &lt;/b&gt; 30 minutes while attack continued activity&lt;br /&gt;
+&lt;b&gt;New Complication:&lt;/b&gt; More systems compramised during imaging&lt;br /&gt;
+&lt;br /&gt;
+[[Decision Point 2B: Investigation Focus]]
+</tw-passagedata><tw-passagedata pid="12" name="Option B: Contain immediately - isolate affected systems" tags="" position="825,150" size="100,100">&lt;b&gt;&lt;u&gt;Option B: Contain immediately - isolate affected systems&lt;/b&gt;&lt;/u&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;Immediate Result: &lt;/b&gt;Stop lateral movement&lt;br /&gt;
+&lt;b&gt;Consequence:&lt;/b&gt; Lose opportunity to observe tactics &lt;br /&gt;
+&lt;b&gt; New Complication: &lt;/b&gt; Attacker may have persistence mechanisms&lt;br /&gt;
+&lt;br /&gt;
+[[Decision Point 2B: Investigation Focus]] </tw-passagedata><tw-passagedata pid="13" name="Option C: Monitor and document while gathering evidence" tags="" position="825,275" size="100,100">&lt;b&gt;&lt;u&gt;Option C: Monitor and document while gathering evidence&lt;/b&gt;&lt;/u&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;Immediate Result: &lt;/b&gt;Best of both worlds initially&lt;br /&gt;
+&lt;b&gt;Consequence:&lt;/b&gt; High risk if attacker notices observation &lt;br /&gt;
+&lt;b&gt; New Complication: &lt;/b&gt;Requires perfect execution under pressure&lt;br /&gt;
+&lt;br /&gt;
+[[Decision Point 2B: Investigation Focus]] </tw-passagedata><tw-passagedata pid="14" name="Decision Point 2B: Investigation Focus" tags="" position="950,150" size="100,100">&lt;b&gt;&lt;u&gt;Decision Point 2B: Investigation Focus&lt;/b&gt;&lt;/u&gt;
+&lt;br /&gt;&lt;br /&gt;
+The attacker seems to be performing a multifaceted attack against your network, users, equipment, and anything else they can get their hands on. You will need to figure out which thing to focus on:
+&lt;ul type=&quot;circle&quot;&gt;
+&lt;li&gt;[[Option A: Focus on network logs - understand the full scope]]&lt;/li&gt;
+&lt;li&gt;[[Option B: Prioritize endpoint analysis - stop active threats]]&lt;/li&gt;
+&lt;li&gt;[[Option C: User behavior analysis - identify all compramised accounts]]&lt;/li&gt;
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="15" name="Option A: Focus on network logs - understand the full scope" tags="" position="1075,25" size="100,100">&lt;b&gt;&lt;u&gt;Option A: Focus on network logs - understand the full scope&lt;/b&gt;&lt;/u&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;Immediate Result: &lt;/b&gt;Attack started 3 days ago, much larger than first appeared&lt;br /&gt;
+&lt;b&gt;Consequence:&lt;/b&gt; Comprehensive view but time-intensive analysis &lt;br /&gt;
 
-[[Phase 1: Part B]]</tw-passagedata><tw-passagedata pid="4" name="Choice 2: ALL the things" tags="" position="325,150" size="100,100">You have overloaded the system. Yeet! There goes your server.
+&lt;br /&gt;
+[[Phase 3: Containment and Communication]] </tw-passagedata><tw-passagedata pid="16" name="Option B: Prioritize endpoint analysis - stop active threats" tags="" position="1075,150" size="100,100">&lt;b&gt;&lt;u&gt;Option B: Prioritize endpoint analysis - stop active threats&lt;/b&gt;&lt;/u&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;Immediate Result: &lt;/b&gt;Find malware on 12 systems, some with keyloggers &lt;br /&gt;
+&lt;b&gt;Consequence:&lt;/b&gt; Immediate threats addressed but miss network persistence &lt;br /&gt;
 
-[[Phase 1: Part B]] </tw-passagedata><tw-passagedata pid="5" name="Choice 3: somewhere in the middle" tags="" position="325,275" size="100,100">You made a good choice. Reacher is proud of you.
+&lt;br /&gt;
+[[Phase 3: Containment and Communication]] </tw-passagedata><tw-passagedata pid="17" name="Option C: User behavior analysis - identify all compramised accounts" tags="" position="1075,275" size="100,100">&lt;b&gt;&lt;u&gt;Option C: User behavior analysis - identify all compromised accounts&lt;/b&gt;&lt;/u&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;b&gt;Immediate Result: &lt;/b&gt;4 accounts compromised, including a privileged service account &lt;br /&gt;
+&lt;b&gt;Consequence:&lt;/b&gt; Account security focused but miss technical attack details &lt;br /&gt;
 
-[[Phase 1: Part B]] 
-</tw-passagedata><tw-passagedata pid="6" name="Phase 1: Part B" tags="" position="450,150" size="100,100"></tw-passagedata></tw-storydata></html>
+&lt;br /&gt;
+[[Phase 3: Containment and Communication]] </tw-passagedata><tw-passagedata pid="18" name="Phase 3: Containment and Communication" tags="" position="1200,150" size="100,100"></tw-passagedata></tw-storydata></html>
